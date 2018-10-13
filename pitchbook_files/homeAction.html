@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0038)https://my.pitchbook.com/homeAction.do -->
+<html style="height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <title>PitchBook</title>
+ <meta http-equiv="PRAGMA" content="NO-CACHE">
+ <meta http-equiv="CACHE-CONTROL" content="PUBLIC,NO-CACHE">
+ <meta http-equiv="EXPIRES" content="0">
+ <link rel="stylesheet" href="./975a90b2e158d4a08a04.css">
+</head>
+<body style="height: 100%; display: flex; flex-direction: column; min-width: 1238px; box-sizing: border-box;">
+<div id="home-content" style="width: 100%; display: block !important; padding: 24px 24px 0 24px;">
+ <div id="tiles-frame" class="prf-frame"></div>
+ <div id="fs-frame" class="iframe-content"></div>
+ <div id="excel-plugin-frame" class="excel-plugin-frame"></div>
+ <div id="news-frame" class="iframe-content"></div>
+ <div id="sf-frame"></div>
+ <div id="conference-frame" class="conf-frame iframe-content"></div>
+ <div id="hc-frame" class="iframe-content"></div>
+ <div id="financial-tile-frame" class="iframe-content"></div>
+ <div id="em-frame" class="iframe-content"></div>
+</div>
+<div class="pb-footer">
+ <div class="copyright">© 2018 PitchBook Data, Inc. All rights
+ reserved.
+ </div>
+ <div class="links">
+ <a target="_black" href="https://pitchbook.com/terms-of-use">Terms of Use</a>
+ <a target="_black" href="https://pitchbook.com/privacy-policy">Privacy</a>
+ </div>
+</div>
+
+
+
+
+
+<div id="datepicker-fixed-cover" style="z-index: 10; background-repeat: repeat; background-image: url(./images/2.0/b/empty.png?uq=MH5bJbwU); display: none; position: fixed; top: 0px; left: 0px; height: 100%; width: 100%;"></div>
+
+<div id="mainFrameLocker" style="position: absolute; background-color: transparent; z-index: -1;"></div>
+
+<div id="login-popup-cover" class="login-popup-cover"></div>
+
+<div id="loginFormDiv" class="login" style="display: none;">
+ <div class="login-popup-wrap" style="padding-bottom: 0px;">
+ <div style="padding-left: 51px; padding-top: 29px; padding-bottom: 15px;">
+ <div class="login-popup-title">Re-join session</div>
+ 
+ <form action="https://my.pitchbook.com/loginAction.do?action=login" method="post">
+ <div style="width: 310px;">
+ <div style="padding-top: 20px;">
+ <div class="login-popup-label" style="clear: both;">Username </div>
+ <div style="clear: both;"><input name="login" value="" type="text" style="width: 240px;" onkeyup="LockScreen.onKeyUp(event)"></div>
+ </div>
+ <div style="padding-top: 9px; clear: both;">
+ <div class="login-popup-label">Password </div>
+ <div><input type="password" name="password" value="" style="font-family: Arial; width: 240px; padding-left: 0;" onkeyup="LockScreen.onKeyUp(event)"></div>
+ 
+ <input type="password" name="password_fake" style="display: none">
+ </div>
+ <input type="hidden" name="loginToken" value="">
+ </div>
+ </form>
+ <div style="padding-bottom: 28px; text-align: left;">
+ <input class="login-page-log-in" type="button" value="Log In" onclick="LockScreen.login();">
+ </div>
+
+ <div class="login-popup-activity">
+ Last Activity: <span id="ACTIVITY_lastActivityTime">-</span>
+ </div>
+ <div class="login-popup-activity">
+ Timeout: <span id="ACTIVITY_timeout">-</span>
+ </div>
+ </div>
+ </div>
+</div>
+
+<div id="loading_label" style="display: none;">
+ <div style="width: 100%; padding-top: 10px; padding-bottom: 10px;">
+ <div class="loading_label">
+ <span id="loading_label_text">Loading...</span>
+ </div>
+ </div>
+</div>
+
+<div id="simpleFocuserDiv" style="position: absolute; width: 0px; height: 0px; border: none; overflow: hidden;">
+ <input data-lpignore="true" id="simpleFocuser">
+</div>
+<div id="simplePopUpPlace" class="controls_simplePopUp">
+ <div id="simplePopUpContent" onmousedown="getSimplePopUp().onFocus();"></div>
+</div>
+
+<div id="searchToolTip" style="display: none; position: absolute; z-index: 20;" onmouseover="ToolTip.stopHide();" onmouseout="ToolTip.hide();">
+ <div id="searchToolTipPlace"></div>
+</div>
+
+<div id="SECLayer" class="comp_cell_body" style="display: none;"><div class="comp_cell_left"></div><div class="comp_cell_loading" style="margin-top: 2px;"></div><div id="compCellBody" class="comp_cell_content">&nbsp;</div><div id="SECLayer_close_link" class="comp_sec_close_small"></div><div class="comp_cell_right"></div></div>
+
+<div id="controlFocuserDiv" style="position: absolute; width: 0px; height: 0px; border: none; overflow: hidden;">
+ <input data-lpignore="true" id="controlFocuser">
+</div>
+
+<div id="fixedHeader" class="advancedSearch_content fixed" style="left: 0px; top: 0px; visibility: hidden; width: 1191px; overflow: hidden; position: fixed">
+ <div id="headerDivLeftScrollArrow" onclick="getComparables().commonTabContent.scrollColLeft()" class="comps_scroll_arrow_small_left" style="left: 195px;">
+ <div id="headerDivLeftScrollArrow_inner" class="comps-scroll-arrow-small-in"></div>
+ </div>
+
+ <div id="headerDivRightScrollArrow" onclick="getComparables().commonTabContent.scrollColRight()" class="comps_scroll_arrow_small_right" style="left: 1182px;">
+ <div id="headerDivRightScrollArrow_inner" class="comps-scroll-arrow-small-in"></div>
+ </div>
+ <div id="headerDivHeaderColumn" style="width: 193px;"><div style="height: 64px; width: 100%;"></div></div>
+
+ 
+ <div id="headerDiv0Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv1Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv2Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv3Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv4Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv5Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv6Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv7Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv8Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv9Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv10Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv11Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv12Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv13Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv14Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv15Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv16Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv17Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv18Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv19Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv20Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv21Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv22Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv23Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv24Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div id="headerDiv25Column" style="width: 90px;"><div class="comps_table_header_b" style="height: 64px; width: 100%; text-align: center; overflow: hidden;"></div></div>
+ 
+ <div style="width: 7px;"><div class="comp_image_set comps_table_header_r" style="height: 64px;"></div></div>
+</div>
+
+<div id="fixedScroll" class="fixed" style="left: 0px; bottom: 0px; visibility: hidden; width: 410px; position: fixed"></div>
+<div id="fixedPGHeader" class="fixed" style="left: 0px; top: 0px; width: 1188px; visibility: hidden; position: fixed; background-color: #E8E8E8;"></div>
+
+<div style="display:none;" id="edgarOnline">
+ <div class="edgarBg">
+ <div class="edgarBody" style="padding: 25px;">
+ <div class="edgarTitle">Terms and Conditions</div>
+ <div style="padding-top: 9px; width: 100%;">
+ EDGAR Online, Inc. and the information providers herein make no claims concerning the validity
+ of the information provided hereby and will not be held liable for any use of this information.
+ The information provided herein may be displayed and printed for your internal use only and may
+ not reproduced, retransmitted, distributed, disseminated, sold, published, broadcast or circulated
+ to anyone without the express written consent of EDGAR Online, Inc.
+ </div>
+ <div style="padding-left: 155px; padding-top: 15px;">
+ <div onclick="top.Widgets.Popup.Simple.hide();" class="edgar_btn_ok"></div>
+ </div>
+ </div>
+ </div>
+</div>
+<div>
+ <input id="userSettings" type="hidden" value="{&quot;lastName&quot;:&quot;Zeiders&quot;,&quot;preferences&quot;:{&quot;userLocale&quot;:{&quot;thousandFormat&quot;:&quot;,&quot;,&quot;symbolPosition&quot;:&quot;LEFT&quot;,&quot;dateFormat&quot;:&quot;MM-DD-YYYY&quot;,&quot;decimalFormat&quot;:&quot;.&quot;},&quot;paperFormat&quot;:&quot;LETTER&quot;,&quot;showNativeCurrency&quot;:false,&quot;currency&quot;:{&quot;symbol&quot;:&quot;$&quot;,&quot;code&quot;:&quot;USD&quot;,&quot;name&quot;:&quot;US Dollars&quot;}},&quot;fullName&quot;:&quot;John Zeiders&quot;,&quot;showUniversityJobsTour&quot;:false,&quot;showTestDriveTour&quot;:false,&quot;showMobileTour&quot;:false,&quot;showConferenceAds&quot;:false,&quot;conferenceAdvertisements&quot;:[],&quot;userLogin&quot;:&quot;zeiders@usc.edu&quot;,&quot;conferenceIds&quot;:[],&quot;firstName&quot;:&quot;John&quot;,&quot;showMobilePromotion&quot;:false,&quot;testDrive&quot;:{},&quot;disableStickyNavigation&quot;:false,&quot;phone&quot;:&quot;&quot;,&quot;showNewFeaturesTour&quot;:false,&quot;showMobileReminder&quot;:false,&quot;allowedModules&quot;:{&quot;KNC&quot;:true,&quot;OPC&quot;:true,&quot;LP&quot;:true,&quot;IRR&quot;:true,&quot;NDASH&quot;:false,&quot;DEBT&quot;:true,&quot;DASH&quot;:true,&quot;INV&quot;:true,&quot;MDCRM&quot;:false,&quot;DEALCLOUDCRM&quot;:false,&quot;SP&quot;:true,&quot;MP&quot;:true,&quot;CHROMEEXTENSION&quot;:true,&quot;VALCAP&quot;:true,&quot;PROSEEDERCRM&quot;:false,&quot;PED&quot;:true,&quot;EQUITYRESEARCH&quot;:true,&quot;MAD&quot;:true,&quot;PC&quot;:true,&quot;PE&quot;:true,&quot;VCD&quot;:true,&quot;NETAGECRM&quot;:false,&quot;NEWS&quot;:true,&quot;SFCRM&quot;:false,&quot;EXCELPLUGIN&quot;:true,&quot;PVC&quot;:true},&quot;untracked&quot;:false,&quot;userEmail&quot;:&quot;zeiders@usc.edu&quot;,&quot;projectCodes&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false}}">
+</div>
+
+<script src="./webfont.js" type="text/javascript" async=""></script><script>
+ var images = new Array();
+
+ function preload(img) {
+ img.forEach(function (el, i) {
+ images[i] = new Image();
+ images[i].src = el;
+ });
+ }
+
+ preload([
+ "/images/pb/control/chb/checked-pressed.svg",
+ "/images/pb/control/chb/default.svg",
+ "/images/pb/control/chb/default-focused.svg",
+ "/images/pb/control/chb/default-pressed.svg",
+ "/images/pb/control/chb/checked.svg",
+ "/images/pb/control/chb/checked-focused.svg",
+ "/images/pb/control/chb/disabled.svg",
+ "/images/pb/control/chb/disabled-checked.svg",
+ "/images/pb/control/chb/disabled-mixed.svg",
+ "/images/pb/control/ets/radio-button.svg",
+ "/images/pb/control/ets/radio-button-hover.svg",
+ "/images/pb/control/ets/radio-button-checked.svg",
+ "/images/pb/control/ets/radio-button-checked-hover.svg",
+ "/images/pb/control/dts/collapse-new.svg",
+ "/images/pb/control/dts/collapse-new-hover.svg",
+ "/images/pb/control/dts/expand-new.svg",
+ "/images/pb/control/dts/expand-new-hover.svg"
+ ]);
+</script>
+<script src="./homeContent.180dbcd658eead55ccdd.js"></script><div class="tile-back-to-top" style="display: none;">Back to top</div><div class="pb-overlay-helper" style="display: none; z-index: 2;"></div>
+
+<iframe style="width:0px; height:0px; display:none;" id="local_downloadIFrameId" name="local_downloadIFrameId" src="./saved_resource.html"></iframe></body></html>
