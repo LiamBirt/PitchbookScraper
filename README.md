@@ -1,4 +1,4 @@
 ## Usage
 
 npm i
-node scraper.js <inputfile> <outputfile>
+node scraper.js inputfile outputfile
