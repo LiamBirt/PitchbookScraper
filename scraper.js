@@ -7,9 +7,17 @@ const program = require('commander');
 
 program.version('0.1.0').parse(process.argv);
 
-const inputFiles = program.args.slice(0, program.args.length - 1);
+var inputFiles = [];
 
-const outputFile = program.args[program.args.length - 1];
+fs.readdirSync("inputs").forEach(file => {
+  inputFiles.push("inputs/" + file);
+  console.log(file);
+});
+
+// const inputFiles = program.args.slice(0, program.args.length - 1);
+// console.log(inputFiles);
+const outputFile = "outputs/" + program.args[program.args.length - 1];
+console.log(outputFile);
 
 let Persons = [];
 let $ = null;
@@ -38,6 +46,7 @@ function ScrapePerson(row) {
     email,
     position,
   };
+  console.log(person);
   if (firstName == '' && lastName == '' && company == '') {
     return null;
   }
